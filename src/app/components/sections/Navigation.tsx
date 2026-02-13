@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { Menu, X, User } from 'lucide-react';
 import logoMayaConnect from '../../../assets/logo2.png';
+import SignUpModal from './SignUpModal';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSignUpOpen, setIsSignUpOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50">
@@ -31,7 +33,10 @@ export default function Navigation() {
 
           {/* CTA Button */}
           <div className="flex items-center gap-4 flex-shrink-0">
-            <button className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#8B2635] to-[#C13048] text-white rounded-full hover:shadow-lg transition-all font-semibold text-sm">
+            <button 
+              onClick={() => setIsSignUpOpen(true)}
+              className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#8B2635] to-[#C13048] text-white rounded-full hover:shadow-lg transition-all font-semibold text-sm"
+            >
               <User className="w-4 h-4" />
               S'inscrire
             </button>
@@ -75,7 +80,10 @@ export default function Navigation() {
             </a>
             <button 
               className="w-full mt-4 px-5 py-2.5 bg-gradient-to-r from-[#8B2635] to-[#C13048] text-white rounded-full hover:shadow-lg transition-all font-semibold flex items-center justify-center gap-2"
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => {
+                setIsMenuOpen(false);
+                setIsSignUpOpen(true);
+              }}
             >
               <User className="w-4 h-4" />
               S'inscrire
@@ -83,6 +91,9 @@ export default function Navigation() {
           </div>
         </div>
       )}
+
+      {/* Sign Up Modal */}
+      <SignUpModal isOpen={isSignUpOpen} onClose={() => setIsSignUpOpen(false)} />
     </nav>
   );
 }

@@ -6,7 +6,8 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite",
-    "deploy": "vercel --prod"
+    "deploy": "vercel --prod",
+    "setup-favicon": "node -e \"const fs = require('fs'); const path = require('path'); if (!fs.existsSync('public')) fs.mkdirSync('public'); fs.copyFileSync('src/assets/logo2.png', 'public/favicon.png'); fs.copyFileSync('src/assets/logo2.png', 'public/og-image.png'); console.log('Fichiers copiés avec succès!');\""
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
