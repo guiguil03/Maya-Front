@@ -20,7 +20,7 @@ export default function HowItWorksSection() {
             Commencez à Économiser en<br />3 Étapes Simples
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Rejoignez des milliers d'utilisateurs qui économisent déjà avec Maya
+            Rejoignez des milliers d'utilisateurs qui économisent déjà avec MayaConnect
           </p>
         </motion.div>
 
@@ -48,15 +48,15 @@ export default function HowItWorksSection() {
           >
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
               {/* Left Side - Content */}
-              <div className="flex-1 w-full lg:text-right order-2 lg:order-1">
+              <div className="flex-1 w-full order-2 lg:order-1 flex justify-end">
                 <motion.div 
                   whileHover={{ scale: 1.02, y: -8 }}
                   transition={{ type: "spring", stiffness: 300 }}
-                  className="inline-block p-8 lg:p-10 bg-white rounded-3xl shadow-lg border-2 border-[#8B2635]/10 hover:border-[#8B2635]/30 hover:shadow-2xl transition-all"
+                  className="w-full lg:w-auto lg:max-w-lg p-8 lg:p-10 bg-white rounded-3xl shadow-lg border-2 border-[#8B2635]/10 hover:border-[#8B2635]/30 hover:shadow-2xl transition-all"
                 >
-                  <div>
-                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">Téléchargez l'app</h3>
-                    <p className="text-gray-600 leading-relaxed text-base lg:text-lg max-w-lg lg:max-w-none">
+                  <div className="flex flex-col">
+                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 lg:mb-4 text-left lg:text-right">Téléchargez l'app</h3>
+                    <p className="text-gray-600 leading-relaxed text-base lg:text-lg text-left lg:text-right">
                       Créez votre compte gratuitement en quelques secondes et découvrez plus de 500 partenaires disponibles près de chez vous.
                     </p>
                   </div>
@@ -109,16 +109,16 @@ export default function HowItWorksSection() {
               </motion.div>
 
               {/* Right Side - Content */}
-              <div className="flex-1 w-full text-left order-2">
+              <div className="flex-1 w-full order-2 flex justify-start">
                 <motion.div
                   whileHover={{ scale: 1.02, y: -8 }}
                   transition={{ type: "spring", stiffness: 300 }}
-                  className="inline-block p-8 lg:p-10 bg-white rounded-3xl shadow-lg border-2 border-[#8B2635]/10 hover:border-[#8B2635]/30 hover:shadow-2xl transition-all"
+                  className="w-full lg:w-auto lg:max-w-lg p-8 lg:p-10 bg-white rounded-3xl shadow-lg border-2 border-[#8B2635]/10 hover:border-[#8B2635]/30 hover:shadow-2xl transition-all"
                 >
-                  <div>
-                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">Faites vos achats</h3>
-                    <p className="text-gray-600 leading-relaxed text-base lg:text-lg max-w-lg lg:max-w-none">
-                      Rendez-vous chez un partenaire Maya et scannez simplement le QR code à la caisse pour valider votre achat en 2 secondes.
+                  <div className="flex flex-col">
+                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 lg:mb-4 text-left">Faites vos achats</h3>
+                    <p className="text-gray-600 leading-relaxed text-base lg:text-lg text-left">
+                      Rendez-vous chez un partenaire MayaConnect et scannez simplement le QR code à la caisse pour valider votre achat en 2 secondes.
                     </p>
                   </div>
                 </motion.div>
@@ -136,15 +136,15 @@ export default function HowItWorksSection() {
           >
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
               {/* Left Side - Content */}
-              <div className="flex-1 w-full lg:text-right order-2 lg:order-1">
+              <div className="flex-1 w-full order-2 lg:order-1 flex justify-end">
                 <motion.div
                   whileHover={{ scale: 1.02, y: -8 }}
                   transition={{ type: "spring", stiffness: 300 }}
-                  className="inline-block p-8 lg:p-10 bg-white rounded-3xl shadow-lg border-2 border-[#8B2635]/10 hover:border-[#8B2635]/30 hover:shadow-2xl transition-all"
+                  className="w-full lg:w-auto lg:max-w-lg p-8 lg:p-10 bg-white rounded-3xl shadow-lg border-2 border-[#8B2635]/10 hover:border-[#8B2635]/30 hover:shadow-2xl transition-all"
                 >
-                  <div>
-                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">Économisez</h3>
-                    <p className="text-gray-600 leading-relaxed text-base lg:text-lg max-w-lg lg:max-w-none">
+                  <div className="flex flex-col">
+                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 lg:mb-4 text-left lg:text-right">Économisez</h3>
+                    <p className="text-gray-600 leading-relaxed text-base lg:text-lg text-left lg:text-right">
                       Économisez instantanément sur chaque achat et suivez toutes vos économies réalisées en temps réel.
                     </p>
                   </div>

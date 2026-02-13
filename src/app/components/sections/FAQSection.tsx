@@ -38,7 +38,7 @@ export default function FAQSection() {
               className="w-full p-6 bg-white rounded-2xl border border-gray-200 hover:shadow-lg transition-all text-left"
             >
               <div className="flex items-center justify-between gap-4">
-                <h3 className="text-lg font-bold text-gray-900">Qu'est-ce que Maya ?</h3>
+                <h3 className="text-lg font-bold text-gray-900">Qu'est-ce que MayaConnect ?</h3>
                 <motion.div
                   animate={{ rotate: openFaq === 0 ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
@@ -55,7 +55,7 @@ export default function FAQSection() {
                 className="overflow-hidden"
               >
                 <p className="text-gray-600 mt-4 leading-relaxed">
-                  Maya est une application qui vous permet d'économiser de l'argent sur tous vos achats quotidiens. Scannez simplement un QR code chez nos partenaires et économisez instantanément sur chaque achat.
+                  MayaConnect est une application qui vous permet d'économiser de l'argent sur tous vos achats quotidiens. Scannez simplement un QR code chez nos partenaires et économisez instantanément sur chaque achat.
                 </p>
               </motion.div>
             </button>
@@ -73,7 +73,7 @@ export default function FAQSection() {
               className="w-full p-6 bg-white rounded-2xl border border-gray-200 hover:shadow-lg transition-all text-left"
             >
               <div className="flex items-center justify-between gap-4">
-                <h3 className="text-lg font-bold text-gray-900">Comment économiser avec Maya ?</h3>
+                <h3 className="text-lg font-bold text-gray-900">Comment économiser avec MayaConnect ?</h3>
                 <motion.div
                   animate={{ rotate: openFaq === 1 ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
@@ -90,7 +90,7 @@ export default function FAQSection() {
                 className="overflow-hidden"
               >
                 <p className="text-gray-600 mt-4 leading-relaxed">
-                  Après chaque achat chez un partenaire Maya, scannez le QR code du commerçant. Vos économies sont automatiquement calculées et ajoutées à votre compte Maya en temps réel. Vous pouvez ensuite les retirer ou les utiliser pour vos prochains achats.
+                  Après chaque achat chez un partenaire MayaConnect, scannez le QR code du commerçant. Vos économies sont automatiquement calculées et ajoutées à votre compte MayaConnect en temps réel. Vous pouvez ensuite les retirer ou les utiliser pour vos prochains achats.
                 </p>
               </motion.div>
             </button>
@@ -108,7 +108,7 @@ export default function FAQSection() {
               className="w-full p-6 bg-white rounded-2xl border border-gray-200 hover:shadow-lg transition-all text-left"
             >
               <div className="flex items-center justify-between gap-4">
-                <h3 className="text-lg font-bold text-gray-900">Maya est-elle gratuite ?</h3>
+                <h3 className="text-lg font-bold text-gray-900">MayaConnect est-elle gratuite ?</h3>
                 <motion.div
                   animate={{ rotate: openFaq === 2 ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
@@ -125,7 +125,7 @@ export default function FAQSection() {
                 className="overflow-hidden"
               >
                 <p className="text-gray-600 mt-4 leading-relaxed">
-                  Oui, Maya est 100% gratuite pour tous les utilisateurs ! Il n'y a aucun frais d'inscription, d'utilisation ou de retrait. Vous gardez l'intégralité de vos économies.
+                  Oui, MayaConnect est 100% gratuite pour tous les utilisateurs ! Il n'y a aucun frais d'inscription, d'utilisation ou de retrait. Vous gardez l'intégralité de vos économies.
                 </p>
               </motion.div>
             </button>
@@ -160,7 +160,7 @@ export default function FAQSection() {
                 className="overflow-hidden"
               >
                 <p className="text-gray-600 mt-4 leading-relaxed">
-                  Vos économies sont créditées instantanément sur votre compte Maya dès que vous scannez le QR code et validez votre achat. Vous pouvez les voir apparaître en temps réel dans votre historique de transactions.
+                  Vos économies sont créditées instantanément sur votre compte MayaConnect dès que vous scannez le QR code et validez votre achat. Vous pouvez les voir apparaître en temps réel dans votre historique de transactions.
                 </p>
               </motion.div>
             </button>
@@ -178,7 +178,7 @@ export default function FAQSection() {
               className="w-full p-6 bg-white rounded-2xl border border-gray-200 hover:shadow-lg transition-all text-left"
             >
               <div className="flex items-center justify-between gap-4">
-                <h3 className="text-lg font-bold text-gray-900">Puis-je utiliser Maya partout ?</h3>
+                <h3 className="text-lg font-bold text-gray-900">Puis-je utiliser MayaConnect partout ?</h3>
                 <motion.div
                   animate={{ rotate: openFaq === 4 ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
@@ -195,7 +195,7 @@ export default function FAQSection() {
                 className="overflow-hidden"
               >
                 <p className="text-gray-600 mt-4 leading-relaxed">
-                  Maya fonctionne chez tous nos commerçants partenaires. Nous avons plus de 500 partenaires dans différentes catégories : restaurants, commerces, supermarchés, et bien plus. Consultez la carte interactive dans l'app pour trouver les partenaires près de chez vous.
+                  MayaConnect fonctionne chez tous nos commerçants partenaires. Nous avons plus de 500 partenaires dans différentes catégories : restaurants, commerces, supermarchés, et bien plus. Consultez la carte interactive dans l'app pour trouver les partenaires près de chez vous.
                 </p>
               </motion.div>
             </button>
@@ -213,7 +213,7 @@ export default function FAQSection() {
               className="w-full p-6 bg-white rounded-2xl border border-gray-200 hover:shadow-lg transition-all text-left"
             >
               <div className="flex items-center justify-between gap-4">
-                <h3 className="text-lg font-bold text-gray-900">Comment devenir partenaire Maya ?</h3>
+                <h3 className="text-lg font-bold text-gray-900">Comment devenir partenaire MayaConnect ?</h3>
                 <motion.div
                   animate={{ rotate: openFaq === 5 ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
@@ -230,7 +230,7 @@ export default function FAQSection() {
                 className="overflow-hidden"
               >
                 <p className="text-gray-600 mt-4 leading-relaxed">
-                  Si vous êtes commerçant et souhaitez rejoindre Maya, cliquez sur "Devenir Partenaire" et remplissez le formulaire d'inscription. Notre équipe vous contactera dans les 48h pour finaliser votre inscription et configurer votre compte.
+                  Si vous êtes commerçant et souhaitez rejoindre MayaConnect, cliquez sur "Devenir Partenaire" et remplissez le formulaire d'inscription. Notre équipe vous contactera dans les 48h pour finaliser votre inscription et configurer votre compte.
                 </p>
               </motion.div>
             </button>

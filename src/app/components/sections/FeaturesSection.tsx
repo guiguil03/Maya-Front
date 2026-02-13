@@ -1,7 +1,12 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Users, Store, Wallet, QrCode, Receipt, MapPin, BarChart3, Target } from 'lucide-react';
+import Slider from 'react-slick';
 import imgDashboard from '../../../assets/IMG_9477.PNG';
+import imgPartner from '../../../assets/IMG_9479.png';
+import imgPartnersList from '../../../assets/IMG_9480.png';
+import imgPartnersMap from '../../../assets/IMG_9481.png';
+import '../../../styles/slider.css';
 
 export default function FeaturesSection() {
   const [activeTab, setActiveTab] = useState<'client' | 'partner'>('client');
@@ -23,7 +28,7 @@ export default function FeaturesSection() {
             Une Plateforme Complète pour<br />Clients et Partenaires
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Découvrez toutes les fonctionnalités de Maya pour économiser et développer votre activité
+            Découvrez toutes les fonctionnalités de MayaConnect pour économiser et développer votre activité
           </p>
         </motion.div>
 
@@ -80,12 +85,66 @@ export default function FeaturesSection() {
             className="relative flex justify-center mb-12 lg:mb-0 lg:absolute lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 z-10"
           >
             <div className="relative w-72 lg:w-80 h-[580px] lg:h-[650px] bg-black rounded-[3.5rem] p-3 shadow-2xl">
-              <div className="w-full h-full bg-white rounded-[3rem] overflow-hidden">
-                <img 
-                  src={imgDashboard} 
-                  alt="Maya Features" 
-                  className="w-full h-full object-cover" 
-                />
+              <div className="w-full h-full bg-white rounded-[3rem] overflow-hidden relative">
+                {activeTab === 'client' ? (
+                  <>
+                    <Slider
+                      dots={true}
+                      infinite={true}
+                      speed={500}
+                      slidesToShow={1}
+                      slidesToScroll={1}
+                      autoplay={true}
+                      autoplaySpeed={3000}
+                      pauseOnHover={true}
+                      cssEase="ease-in-out"
+                      arrows={false}
+                      className="h-full"
+                    >
+                      <div className="h-full">
+                        <img 
+                          src={imgDashboard} 
+                          alt="MayaConnect Dashboard" 
+                          className="w-full h-full object-cover" 
+                        />
+                      </div>
+                      <div className="h-full">
+                        <img 
+                          src={imgPartnersList} 
+                          alt="Vue liste des partenaires" 
+                          className="w-full h-full object-cover" 
+                        />
+                      </div>
+                      <div className="h-full">
+                        <img 
+                          src={imgPartnersMap} 
+                          alt="Vue carte des partenaires" 
+                          className="w-full h-full object-cover" 
+                        />
+                      </div>
+                    </Slider>
+                    {/* Custom dots styling */}
+                    <style>{`
+                      .slick-dots {
+                        bottom: 10px !important;
+                      }
+                      .slick-dots li button:before {
+                        color: #8B2635 !important;
+                        font-size: 10px !important;
+                      }
+                      .slick-dots li.slick-active button:before {
+                        color: #8B2635 !important;
+                        opacity: 1 !important;
+                      }
+                    `}</style>
+                  </>
+                ) : (
+                  <img 
+                    src={imgPartner} 
+                    alt="MayaConnect Partner Dashboard" 
+                    className="w-full h-full object-cover" 
+                  />
+                )}
               </div>
             </div>
           </motion.div>
@@ -158,7 +217,7 @@ export default function FeaturesSection() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Trouver des Partenaires</h3>
                   <p className="text-gray-600 leading-relaxed text-sm lg:text-base">
-                    Découvrez les commerçants partenaires près de chez vous et profitez de leurs offres.
+                    Découvrez les commerçants partenaires près de chez vous et profitez de leurs offres. Explorez en vue liste ou carte directement dans l'app.
                   </p>
                 </motion.div>
               </>
@@ -177,7 +236,7 @@ export default function FeaturesSection() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Attirez Plus de Clients</h3>
                   <p className="text-gray-600 leading-relaxed text-sm lg:text-base">
-                    Augmentez votre visibilité et attirez de nouveaux clients grâce au réseau Maya.
+                    Augmentez votre visibilité et attirez de nouveaux clients grâce au réseau MayaConnect.
                   </p>
                 </motion.div>
 
@@ -255,7 +314,7 @@ export default function FeaturesSection() {
               Téléchargez l'app gratuitement et commencez à économiser dès aujourd'hui sur tous vos achats quotidiens.
             </p>
             <button className="w-full px-6 py-3 bg-gradient-to-r from-[#8B2635] to-[#C13048] text-white rounded-xl hover:shadow-lg transition-all font-semibold">
-              Télécharger Maya
+              Télécharger MayaConnect
             </button>
           </motion.div>
 

@@ -19,10 +19,10 @@ export default function TestimonialsSection() {
             <span className="text-sm text-[#8B2635] font-semibold">Témoignages</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-            Histoires Réelles d'Utilisateurs<br />Qui Économisent avec Maya
+            Histoires Réelles d'Utilisateurs<br />Qui Économisent avec MayaConnect
           </h2>
           <p className="text-lg text-gray-500 max-w-3xl mx-auto">
-            Découvrez comment Maya aide des milliers de personnes à économiser de l'argent quotidiennement et à améliorer leur pouvoir d'achat.
+            Découvrez comment MayaConnect aide des milliers de personnes à économiser de l'argent quotidiennement et à améliorer leur pouvoir d'achat.
           </p>
         </motion.div>
 
@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
             <div className="px-3">
               <div className="p-8 bg-white rounded-3xl border border-gray-200 hover:shadow-xl transition-all h-full">
                 <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                  "Grâce à Maya, j'ai économisé plus de 200€ en seulement 3 mois ! L'application est simple à utiliser et les économies s'accumulent rapidement. Je recommande à tous !"
+                  "Grâce à MayaConnect, j'ai économisé plus de 200€ en seulement 3 mois ! L'application est simple à utiliser et les économies s'accumulent rapidement. Je recommande à tous !"
                 </p>
                 
                 <div className="flex items-center gap-4">
@@ -78,7 +78,7 @@ export default function TestimonialsSection() {
             <div className="px-3">
               <div className="p-8 bg-white rounded-3xl border border-gray-200 hover:shadow-xl transition-all h-full">
                 <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                  "Avec Maya, j'économise sur tous mes achats quotidiens. En quelques mois, j'ai déjà récupéré plus de 150€ ! C'est devenu un réflexe à chaque achat."
+                  "Avec MayaConnect, j'économise sur tous mes achats quotidiens. En quelques mois, j'ai déjà récupéré plus de 150€ ! C'est devenu un réflexe à chaque achat."
                 </p>
                 
                 <div className="flex items-center gap-4">
@@ -97,7 +97,7 @@ export default function TestimonialsSection() {
             <div className="px-3">
               <div className="p-8 bg-white rounded-3xl border border-gray-200 hover:shadow-xl transition-all h-full">
                 <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                  "Maya m'a permis d'économiser plus de 300€ cette année ! Chaque achat me rapporte des économies, c'est génial. Je ne peux plus m'en passer !"
+                  "MayaConnect m'a permis d'économiser plus de 300€ cette année ! Chaque achat me rapporte des économies, c'est génial. Je ne peux plus m'en passer !"
                 </p>
                 
                 <div className="flex items-center gap-4">
@@ -116,7 +116,7 @@ export default function TestimonialsSection() {
             <div className="px-3">
               <div className="p-8 bg-white rounded-3xl border border-gray-200 hover:shadow-xl transition-all h-full">
                 <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                  "En tant que famille nombreuse, Maya nous fait économiser énormément ! Nous avons déjà récupéré plus de 500€ depuis le début de l'année. C'est une vraie aide !"
+                  "En tant que famille nombreuse, MayaConnect nous fait économiser énormément ! Nous avons déjà récupéré plus de 500€ depuis le début de l'année. C'est une vraie aide !"
                 </p>
                 
                 <div className="flex items-center gap-4">
@@ -135,7 +135,7 @@ export default function TestimonialsSection() {
             <div className="px-3">
               <div className="p-8 bg-white rounded-3xl border border-gray-200 hover:shadow-xl transition-all h-full">
                 <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                  "Maya est devenu indispensable pour mes économies ! J'ai économisé près de 180€ en 2 mois simplement en faisant mes courses normalement. Incroyable !"
+                  "MayaConnect est devenu indispensable pour mes économies ! J'ai économisé près de 180€ en 2 mois simplement en faisant mes courses normalement. Incroyable !"
                 </p>
                 
                 <div className="flex items-center gap-4">
@@ -154,7 +154,7 @@ export default function TestimonialsSection() {
             <div className="px-3">
               <div className="p-8 bg-white rounded-3xl border border-gray-200 hover:shadow-xl transition-all h-full">
                 <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                  "Grâce à Maya, j'économise sur chaque achat sans effort. En 6 mois, j'ai récupéré plus de 400€ ! C'est l'application la plus utile que j'aie jamais téléchargée."
+                  "Grâce à MayaConnect, j'économise sur chaque achat sans effort. En 6 mois, j'ai récupéré plus de 400€ ! C'est l'application la plus utile que j'aie jamais téléchargée."
                 </p>
                 
                 <div className="flex items-center gap-4">

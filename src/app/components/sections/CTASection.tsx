@@ -23,7 +23,7 @@ export default function CTASection() {
             </div>
 
             <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
-              Commencez à Économiser avec <span className="text-white/90">Maya</span> Aujourd'hui
+              Commencez à Économiser avec <span className="text-white/90">MayaConnect</span> Aujourd'hui
             </h2>
 
             <p className="text-lg text-white/90 leading-relaxed max-w-xl">
@@ -75,7 +75,7 @@ export default function CTASection() {
                 <div className="w-full h-full bg-white rounded-[3rem] overflow-hidden">
                   <img 
                     src={imgQRCode} 
-                    alt="Maya QR Code Screen" 
+                    alt="MayaConnect QR Code Screen" 
                     className="w-full h-full object-cover" 
                   />
                 </div>

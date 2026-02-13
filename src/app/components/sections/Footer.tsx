@@ -1,4 +1,4 @@
-import logoMaya from '../../../assets/logo2.png';
+import logoMayaConnect from '../../../assets/logo2.png';
 
 export default function Footer() {
   return (
@@ -7,8 +7,8 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img src={logoMaya} alt="Maya Logo" className="w-10 h-10" />
-              <span className="text-2xl font-bold">Maya</span>
+              <img src={logoMayaConnect} alt="MayaConnect Logo" className="w-10 h-10" />
+              <span className="text-2xl font-bold">MayaConnect</span>
             </div>
             <p className="text-gray-400">
               L'application qui vous fait économiser de l'argent sur tous vos achats quotidiens.
@@ -45,7 +45,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-400 text-sm">
-            © 2026 Maya. Tous droits réservés.
+            © 2026 MayaConnect. Tous droits réservés.
           </p>
           <div className="flex items-center gap-6 text-gray-400 text-sm">
             <a href="#" className="hover:text-white transition-colors">Conditions d'utilisation</a>

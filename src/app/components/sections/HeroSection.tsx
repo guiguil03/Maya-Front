@@ -5,7 +5,7 @@ import imgQRCode from '../../../assets/IMG_9476.PNG';
 
 export default function HeroSection() {
   return (
-    <section className="relative pt-32 pb-20 px-6 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section className="relative pt-24 lg:pt-28 pb-20 px-6 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Content centered at top */}
         <div className="text-center space-y-8 mb-16">
@@ -15,7 +15,7 @@ export default function HeroSection() {
           </div>
           
           <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight max-w-4xl mx-auto">
-            Économisez à Chaque Achat avec <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8B2635] to-[#C13048]">Maya</span>
+            Économisez à Chaque Achat avec <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8B2635] to-[#C13048]">MayaConnect</span>
           </h1>
           
           <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
@@ -57,7 +57,7 @@ export default function HeroSection() {
             <div className="relative z-10 transform -rotate-6" style={{ marginRight: '-60px' }}>
               <div className="relative w-64 h-[520px] bg-black rounded-[3rem] p-2 shadow-2xl">
                 <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
-                  <img src={imgConnexion} alt="Maya Login" className="w-full h-full object-cover" />
+                  <img src={imgConnexion} alt="MayaConnect Login" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function HeroSection() {
             <div className="relative z-20 transform scale-110">
               <div className="relative w-64 h-[520px] bg-black rounded-[3rem] p-2 shadow-2xl">
                 <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
-                  <img src={imgDashboard} alt="Maya Dashboard" className="w-full h-full object-cover" />
+                  <img src={imgDashboard} alt="MayaConnect Dashboard" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function HeroSection() {
             <div className="relative z-10 transform rotate-6" style={{ marginLeft: '-60px' }}>
               <div className="relative w-64 h-[520px] bg-black rounded-[3rem] p-2 shadow-2xl">
                 <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
-                  <img src={imgQRCode} alt="Maya QR Code" className="w-full h-full object-cover" />
+                  <img src={imgQRCode} alt="MayaConnect QR Code" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
