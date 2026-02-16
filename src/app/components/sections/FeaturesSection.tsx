@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Users, Store, Wallet, QrCode, Receipt, MapPin, BarChart3, Target } from 'lucide-react';
-import imgDashboard from '../../../assets/IMG_9477.png';
+import imgDashboard from '../../../assets/IMG_9477.PNG';
 import imgPartner from '../../../assets/IMG_9479.png';
 import React from 'react';
 
