@@ -23,11 +23,11 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="px-8 py-4 bg-gradient-to-r from-[#8B2635] to-[#C13048] text-white rounded-2xl hover:shadow-2xl transition-all font-semibold flex items-center gap-2 group">
+            <button className="px-4 sm:px-6 md:px-8 py-3 sm:py-4 bg-gradient-to-r from-[#8B2635] to-[#C13048] text-white rounded-2xl hover:shadow-2xl transition-all font-semibold flex items-center gap-2 group text-sm sm:text-base">
               Télécharger l'app
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </button>
-            <button className="px-8 py-4 bg-white border-2 border-gray-300 text-gray-700 rounded-2xl hover:shadow-lg transition-all font-semibold">
+            <button className="px-4 sm:px-6 md:px-8 py-3 sm:py-4 bg-white border-2 border-gray-300 text-gray-700 rounded-2xl hover:shadow-lg transition-all font-semibold text-sm sm:text-base">
               En savoir plus
             </button>
           </div>

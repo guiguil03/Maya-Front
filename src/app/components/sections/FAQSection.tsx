@@ -132,27 +132,27 @@ export default function FAQSection() {
   };
 
   return (
-    <section ref={sectionRef} id="faq" className="relative py-32 px-6 bg-gradient-to-b from-white to-gray-50">
+    <section ref={sectionRef} id="faq" className="relative py-16 sm:py-32 px-4 sm:px-6 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-5xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="text-center space-y-6 mb-20"
+          className="text-center space-y-4 sm:space-y-6 mb-12 sm:mb-20"
         >
           <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#8B2635]/10 rounded-full border border-[#8B2635]/20">
             <span className="text-sm text-[#8B2635] font-semibold">📋 FAQ</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
             Questions Fréquemment Posées
           </h2>
-          <p className="text-lg text-gray-500 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-500 max-w-3xl mx-auto">
             Voici quelques questions fréquentes que nous avons reçues pour aider les nouveaux utilisateurs
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
           {/* FAQ 1 */}
           <div
             ref={(el) => {
@@ -161,10 +161,10 @@ export default function FAQSection() {
           >
             <button
               onClick={() => toggleFaq(0)}
-              className="w-full p-6 bg-white rounded-2xl border border-gray-200 hover:border-[#8B2635]/30 hover:shadow-xl transition-all duration-300 text-left group"
+              className="w-full p-4 sm:p-6 bg-white rounded-2xl border border-gray-200 hover:border-[#8B2635]/30 hover:shadow-xl transition-all duration-300 text-left group"
             >
-              <div className="flex items-center justify-between gap-4">
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#8B2635] transition-colors">
+              <div className="flex items-center justify-between gap-3 sm:gap-4">
+                <h3 className="text-base sm:text-lg font-bold text-gray-900 group-hover:text-[#8B2635] transition-colors pr-2">
                   Qu'est-ce que MayaConnect ?
                 </h3>
                 <div className="faq-icon">
@@ -174,7 +174,7 @@ export default function FAQSection() {
                 </div>
               </div>
               <div className="faq-content overflow-hidden">
-                <p className="text-gray-600 mt-4 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 mt-3 sm:mt-4 leading-relaxed">
                   MayaConnect est une application qui vous permet d'économiser de l'argent sur tous vos achats quotidiens. Scannez simplement un QR code chez nos partenaires et économisez instantanément sur chaque achat.
                 </p>
               </div>
@@ -189,10 +189,10 @@ export default function FAQSection() {
           >
             <button
               onClick={() => toggleFaq(1)}
-              className="w-full p-6 bg-white rounded-2xl border border-gray-200 hover:border-[#8B2635]/30 hover:shadow-xl transition-all duration-300 text-left group"
+              className="w-full p-4 sm:p-6 bg-white rounded-2xl border border-gray-200 hover:border-[#8B2635]/30 hover:shadow-xl transition-all duration-300 text-left group"
             >
-              <div className="flex items-center justify-between gap-4">
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#8B2635] transition-colors">
+              <div className="flex items-center justify-between gap-3 sm:gap-4">
+                <h3 className="text-base sm:text-lg font-bold text-gray-900 group-hover:text-[#8B2635] transition-colors pr-2">
                   Comment économiser avec MayaConnect ?
                 </h3>
                 <div className="faq-icon">
@@ -202,7 +202,7 @@ export default function FAQSection() {
                 </div>
               </div>
               <div className="faq-content overflow-hidden">
-                <p className="text-gray-600 mt-4 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 mt-3 sm:mt-4 leading-relaxed">
                   Après chaque achat chez un partenaire MayaConnect, scannez le QR code du commerçant. Vos économies sont automatiquement calculées et ajoutées à votre compte MayaConnect en temps réel. Vous pouvez ensuite les retirer ou les utiliser pour vos prochains achats.
                 </p>
               </div>
@@ -217,10 +217,10 @@ export default function FAQSection() {
           >
             <button
               onClick={() => toggleFaq(2)}
-              className="w-full p-6 bg-white rounded-2xl border border-gray-200 hover:border-[#8B2635]/30 hover:shadow-xl transition-all duration-300 text-left group"
+              className="w-full p-4 sm:p-6 bg-white rounded-2xl border border-gray-200 hover:border-[#8B2635]/30 hover:shadow-xl transition-all duration-300 text-left group"
             >
-              <div className="flex items-center justify-between gap-4">
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#8B2635] transition-colors">
+              <div className="flex items-center justify-between gap-3 sm:gap-4">
+                <h3 className="text-base sm:text-lg font-bold text-gray-900 group-hover:text-[#8B2635] transition-colors pr-2">
                   MayaConnect est-elle gratuite ?
                 </h3>
                 <div className="faq-icon">
@@ -230,7 +230,7 @@ export default function FAQSection() {
                 </div>
               </div>
               <div className="faq-content overflow-hidden">
-                <p className="text-gray-600 mt-4 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 mt-3 sm:mt-4 leading-relaxed">
                   Oui, MayaConnect est 100% gratuite pour tous les utilisateurs ! Il n'y a aucun frais d'inscription, d'utilisation ou de retrait. Vous gardez l'intégralité de vos économies.
                 </p>
               </div>
@@ -245,10 +245,10 @@ export default function FAQSection() {
           >
             <button
               onClick={() => toggleFaq(3)}
-              className="w-full p-6 bg-white rounded-2xl border border-gray-200 hover:border-[#8B2635]/30 hover:shadow-xl transition-all duration-300 text-left group"
+              className="w-full p-4 sm:p-6 bg-white rounded-2xl border border-gray-200 hover:border-[#8B2635]/30 hover:shadow-xl transition-all duration-300 text-left group"
             >
-              <div className="flex items-center justify-between gap-4">
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#8B2635] transition-colors">
+              <div className="flex items-center justify-between gap-3 sm:gap-4">
+                <h3 className="text-base sm:text-lg font-bold text-gray-900 group-hover:text-[#8B2635] transition-colors pr-2">
                   Quand puis-je voir mes économies ?
                 </h3>
                 <div className="faq-icon">
@@ -258,7 +258,7 @@ export default function FAQSection() {
                 </div>
               </div>
               <div className="faq-content overflow-hidden">
-                <p className="text-gray-600 mt-4 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 mt-3 sm:mt-4 leading-relaxed">
                   Vos économies sont créditées instantanément sur votre compte MayaConnect dès que vous scannez le QR code et validez votre achat. Vous pouvez les voir apparaître en temps réel dans votre historique de transactions.
                 </p>
               </div>
@@ -273,10 +273,10 @@ export default function FAQSection() {
           >
             <button
               onClick={() => toggleFaq(4)}
-              className="w-full p-6 bg-white rounded-2xl border border-gray-200 hover:border-[#8B2635]/30 hover:shadow-xl transition-all duration-300 text-left group"
+              className="w-full p-4 sm:p-6 bg-white rounded-2xl border border-gray-200 hover:border-[#8B2635]/30 hover:shadow-xl transition-all duration-300 text-left group"
             >
-              <div className="flex items-center justify-between gap-4">
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#8B2635] transition-colors">
+              <div className="flex items-center justify-between gap-3 sm:gap-4">
+                <h3 className="text-base sm:text-lg font-bold text-gray-900 group-hover:text-[#8B2635] transition-colors pr-2">
                   Puis-je utiliser MayaConnect partout ?
                 </h3>
                 <div className="faq-icon">
@@ -286,7 +286,7 @@ export default function FAQSection() {
                 </div>
               </div>
               <div className="faq-content overflow-hidden">
-                <p className="text-gray-600 mt-4 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 mt-3 sm:mt-4 leading-relaxed">
                   MayaConnect fonctionne chez tous nos commerçants partenaires. Nous avons plus de 500 partenaires dans différentes catégories : restaurants, commerces, supermarchés, et bien plus. Consultez la carte interactive dans l'app pour trouver les partenaires près de chez vous.
                 </p>
               </div>
@@ -301,10 +301,10 @@ export default function FAQSection() {
           >
             <button
               onClick={() => toggleFaq(5)}
-              className="w-full p-6 bg-white rounded-2xl border border-gray-200 hover:border-[#8B2635]/30 hover:shadow-xl transition-all duration-300 text-left group"
+              className="w-full p-4 sm:p-6 bg-white rounded-2xl border border-gray-200 hover:border-[#8B2635]/30 hover:shadow-xl transition-all duration-300 text-left group"
             >
-              <div className="flex items-center justify-between gap-4">
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#8B2635] transition-colors">
+              <div className="flex items-center justify-between gap-3 sm:gap-4">
+                <h3 className="text-base sm:text-lg font-bold text-gray-900 group-hover:text-[#8B2635] transition-colors pr-2">
                   Comment devenir partenaire MayaConnect ?
                 </h3>
                 <div className="faq-icon">
@@ -314,7 +314,7 @@ export default function FAQSection() {
                 </div>
               </div>
               <div className="faq-content overflow-hidden">
-                <p className="text-gray-600 mt-4 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 mt-3 sm:mt-4 leading-relaxed">
                   Si vous êtes commerçant et souhaitez rejoindre MayaConnect, cliquez sur "Devenir Partenaire" et remplissez le formulaire d'inscription. Notre équipe vous contactera dans les 48h pour finaliser votre inscription et configurer votre compte.
                 </p>
               </div>

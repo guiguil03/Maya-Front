@@ -31,16 +31,16 @@ export default function FeaturesSection() {
 
         {/* Toggle Buttons */}
         <div className="flex justify-center mb-16">
-          <div className="inline-flex bg-gray-100 rounded-2xl p-2 gap-2">
+          <div className="inline-flex bg-gray-100 rounded-2xl p-1 sm:p-1.5 md:p-2 gap-1 sm:gap-1.5 md:gap-2">
             <button
               onClick={() => setActiveTab('client')}
-              className={`relative px-8 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center gap-3 whitespace-nowrap ${
+              className={`relative px-2.5 sm:px-4 md:px-8 py-2 sm:py-2.5 md:py-4 rounded-xl font-semibold transition-all duration-300 flex items-center gap-1 sm:gap-1.5 md:gap-3 whitespace-nowrap text-xs sm:text-sm md:text-base ${
                 activeTab === 'client'
                   ? 'bg-white text-[#8B2635] shadow-lg'
                   : 'text-gray-600 hover:text-gray-900'
               }`}
             >
-              <Users className="w-5 h-5" />
+              <Users className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-5 md:h-5 flex-shrink-0" />
               Pour les Clients
               {activeTab === 'client' && (
                 <motion.div
@@ -52,13 +52,13 @@ export default function FeaturesSection() {
             </button>
             <button
               onClick={() => setActiveTab('partner')}
-              className={`relative px-8 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center gap-3 whitespace-nowrap ${
+              className={`relative px-2.5 sm:px-4 md:px-8 py-2 sm:py-2.5 md:py-4 rounded-xl font-semibold transition-all duration-300 flex items-center gap-1 sm:gap-1.5 md:gap-3 whitespace-nowrap text-xs sm:text-sm md:text-base ${
                 activeTab === 'partner'
                   ? 'bg-gradient-to-r from-[#8B2635] to-[#C13048] text-white shadow-lg'
                   : 'text-gray-600 hover:text-gray-900'
               }`}
             >
-              <Store className="w-5 h-5" />
+              <Store className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-5 md:h-5 flex-shrink-0" />
               Pour les Partenaires
               {activeTab === 'partner' && (
                 <motion.div
