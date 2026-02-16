@@ -6,8 +6,7 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite",
-    "deploy": "vercel --prod",
-    "setup-favicon": "node -e \"const fs = require('fs'); const path = require('path'); if (!fs.existsSync('public')) fs.mkdirSync('public'); fs.copyFileSync('src/assets/logo2.png', 'public/favicon.png'); fs.copyFileSync('src/assets/logo2.png', 'public/og-image.png'); console.log('Fichiers copiés avec succès!');\""
+    "deploy": "vercel --prod"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
@@ -47,6 +46,7 @@
     "date-fns": "3.6.0",
     "embla-carousel-react": "8.6.0",
     "framer-motion": "^12.34.0",
+    "gsap": "^3.14.2",
     "input-otp": "1.4.2",
     "lucide-react": "0.487.0",
     "motion": "12.23.24",
