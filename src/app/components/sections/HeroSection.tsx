@@ -54,27 +54,27 @@ export default function HeroSection() {
         <div className="relative flex items-center justify-center mt-12">
           <div className="relative flex items-center justify-center">
             {/* Phone 1 - Left */}
-            <div className="relative z-10 transform -rotate-6" style={{ marginRight: '-60px' }}>
-              <div className="relative w-64 h-[520px] bg-black rounded-[3rem] p-2 shadow-2xl">
-                <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
+            <div className="relative z-10 transform -rotate-6" style={{ marginRight: '-30px' }}>
+              <div className="relative w-40 h-[320px] md:w-64 md:h-[520px] bg-black rounded-[2rem] md:rounded-[3rem] p-1.5 md:p-2 shadow-2xl">
+                <div className="w-full h-full bg-white rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden">
                   <img src={imgConnexion} alt="MayaConnect Login" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
 
             {/* Phone 2 - Center (Main) */}
-            <div className="relative z-20 transform scale-110">
-              <div className="relative w-64 h-[520px] bg-black rounded-[3rem] p-2 shadow-2xl">
-                <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
+            <div className="relative z-20 transform scale-100 md:scale-110">
+              <div className="relative w-44 h-[360px] md:w-64 md:h-[520px] bg-black rounded-[2.5rem] md:rounded-[3rem] p-2 shadow-2xl">
+                <div className="w-full h-full bg-white rounded-[2rem] md:rounded-[2.5rem] overflow-hidden">
                   <img src={imgDashboard} alt="MayaConnect Dashboard" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
 
             {/* Phone 3 - Right */}
-            <div className="relative z-10 transform rotate-6" style={{ marginLeft: '-60px' }}>
-              <div className="relative w-64 h-[520px] bg-black rounded-[3rem] p-2 shadow-2xl">
-                <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
+            <div className="relative z-10 transform rotate-6" style={{ marginLeft: '-30px' }}>
+              <div className="relative w-40 h-[320px] md:w-64 md:h-[520px] bg-black rounded-[2rem] md:rounded-[3rem] p-1.5 md:p-2 shadow-2xl">
+                <div className="w-full h-full bg-white rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden">
                   <img src={imgQRCode} alt="MayaConnect QR Code" className="w-full h-full object-cover" />
                 </div>
               </div>

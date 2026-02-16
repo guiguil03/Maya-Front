@@ -112,8 +112,8 @@ export default function TestimonialsSection() {
     cards.forEach((card, i) => {
       // Alternating rotation: first card tilts left, second tilts right, etc.
       const rotation = i % 2 === 0 ? -2.5 : 2.5;
-      // Small vertical offset for each stacked card to create depth
-      const stackOffsetY = -i * 6;
+      // Small vertical offset for each stacked card to create depth - reduced for better visibility
+      const stackOffsetY = -i * 4;
 
       tl.to(
         card,
@@ -184,8 +184,8 @@ export default function TestimonialsSection() {
           ref={stackAreaRef}
           className="flex-1 relative flex items-center justify-center px-4 pb-20 sm:pb-32"
         >
-          <div className="relative w-full max-w-[600px] h-[300px] sm:h-[400px]">
-            {testimonials.map((testimonial, index) => (
+          <div className="relative w-full max-w-[600px] h-[350px] sm:h-[450px]">
+            {testimonials.slice(0, -1).map((testimonial, index) => (
               <div
                 key={testimonial.id ?? index}
                 ref={(el) => {

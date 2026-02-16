@@ -34,7 +34,7 @@ export default function FeaturesSection() {
           <div className="inline-flex bg-gray-100 rounded-2xl p-2 gap-2">
             <button
               onClick={() => setActiveTab('client')}
-              className={`relative px-8 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center gap-3 ${
+              className={`relative px-8 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center gap-3 whitespace-nowrap ${
                 activeTab === 'client'
                   ? 'bg-white text-[#8B2635] shadow-lg'
                   : 'text-gray-600 hover:text-gray-900'
@@ -52,7 +52,7 @@ export default function FeaturesSection() {
             </button>
             <button
               onClick={() => setActiveTab('partner')}
-              className={`relative px-8 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center gap-3 ${
+              className={`relative px-8 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center gap-3 whitespace-nowrap ${
                 activeTab === 'partner'
                   ? 'bg-gradient-to-r from-[#8B2635] to-[#C13048] text-white shadow-lg'
                   : 'text-gray-600 hover:text-gray-900'

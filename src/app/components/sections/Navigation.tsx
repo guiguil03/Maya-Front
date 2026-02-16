@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import logoMayaConnect from '../../../assets/logo2.png';
-import { User } from 'lucide-react';
+import { User, Menu, X } from 'lucide-react';
 
 export default function Navigation() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const handleScrollTo = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -13,6 +16,7 @@ export default function Navigation() {
         top: offsetPosition,
         behavior: 'smooth'
       });
+      setIsMenuOpen(false); // Fermer le menu après le scroll
     }
   };
 
@@ -33,7 +37,7 @@ export default function Navigation() {
             <span className="text-xl font-bold text-gray-900">Maya</span>
           </a>
           
-          {/* Liens de navigation centrés */}
+          {/* Liens de navigation centrés - Desktop */}
           <div className="hidden md:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
             <a 
               href="#pricing" 
@@ -67,15 +71,67 @@ export default function Navigation() {
             </a>
           </div>
           
-          {/* Bouton S'inscrire à droite */}
+          {/* Bouton S'inscrire à droite - Desktop */}
           <button 
             onClick={() => handleScrollTo('pricing')}
-            className="px-5 py-2.5 bg-gradient-to-r from-[#8B2635] to-[#C13048] text-white rounded-full hover:shadow-lg transition-all font-medium flex items-center gap-2"
+            className="hidden md:flex px-5 py-2.5 bg-gradient-to-r from-[#8B2635] to-[#C13048] text-white rounded-full hover:shadow-lg transition-all font-medium items-center gap-2"
           >
             <User className="w-4 h-4" />
             <span>S'inscrire</span>
           </button>
+
+          {/* Menu Hamburger - Mobile */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden p-2 text-gray-700 hover:text-[#8B2635] transition-colors"
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
+
+        {/* Menu Mobile */}
+        {isMenuOpen && (
+          <div className="md:hidden mt-4 bg-white/95 backdrop-blur-lg rounded-2xl shadow-lg border border-gray-200/50 p-6 space-y-4">
+            <a 
+              href="#pricing" 
+              onClick={(e) => {
+                e.preventDefault();
+                handleScrollTo('pricing');
+              }}
+              className="block text-gray-700 hover:text-[#8B2635] transition-colors font-medium py-2"
+            >
+              Nos Abonnements
+            </a>
+            <a 
+              href="#testimonials" 
+              onClick={(e) => {
+                e.preventDefault();
+                handleScrollTo('testimonials');
+              }}
+              className="block text-gray-700 hover:text-[#8B2635] transition-colors font-medium py-2"
+            >
+              Avis
+            </a>
+            <a 
+              href="#faq" 
+              onClick={(e) => {
+                e.preventDefault();
+                handleScrollTo('faq');
+              }}
+              className="block text-gray-700 hover:text-[#8B2635] transition-colors font-medium py-2"
+            >
+              Contactez-Nous
+            </a>
+            <button 
+              onClick={() => handleScrollTo('pricing')}
+              className="w-full px-5 py-2.5 bg-gradient-to-r from-[#8B2635] to-[#C13048] text-white rounded-full hover:shadow-lg transition-all font-medium flex items-center justify-center gap-2"
+            >
+              <User className="w-4 h-4" />
+              <span>S'inscrire</span>
+            </button>
+          </div>
+        )}
       </div>
     </nav>
   );
