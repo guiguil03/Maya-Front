@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Users, Store, Wallet, QrCode, Receipt, MapPin, BarChart3, Target } from 'lucide-react';
-import imgDashboard from '../../../assets/IMG_9477.PNG';
-import imgPartner from '../../../assets/IMG_9479.png';
+import imgDashboard from '../../../assets/IMG_9477.png';
+import imgPartner from '../../../assets/IMG_9479.PNG';
+import React from 'react';
 
 export default function FeaturesSection() {
   const [activeTab, setActiveTab] = useState<'client' | 'partner'>('client');
@@ -237,50 +238,7 @@ export default function FeaturesSection() {
           </div>
         </div>
 
-        {/* CTA Cards */}
-        <div className="grid md:grid-cols-2 gap-8 mt-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="p-8 bg-gradient-to-br from-[#8B2635]/10 to-[#C13048]/10 rounded-3xl border border-[#8B2635]/20"
-          >
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#8B2635] to-[#C13048] rounded-xl flex items-center justify-center">
-                <Users className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900">Pour les Clients</h3>
-            </div>
-            <p className="text-gray-700 mb-6 leading-relaxed">
-              Téléchargez l'app gratuitement et commencez à économiser dès aujourd'hui sur tous vos achats quotidiens.
-            </p>
-            <button className="w-full px-6 py-3 bg-gradient-to-r from-[#8B2635] to-[#C13048] text-white rounded-xl hover:shadow-lg transition-all font-semibold">
-              Télécharger MayaConnect
-            </button>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="p-8 bg-gradient-to-br from-[#8B2635]/10 to-[#C13048]/10 rounded-3xl border border-[#8B2635]/20"
-          >
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#8B2635] to-[#C13048] rounded-xl flex items-center justify-center">
-                <Store className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900">Pour les Partenaires</h3>
-            </div>
-            <p className="text-gray-700 mb-6 leading-relaxed">
-              Rejoignez notre réseau de 500+ commerçants partenaires et développez votre clientèle rapidement.
-            </p>
-            <button className="w-full px-6 py-3 bg-gradient-to-r from-[#8B2635] to-[#C13048] text-white rounded-xl hover:shadow-lg transition-all font-semibold">
-              Devenir Partenaire
-            </button>
-          </motion.div>
-        </div>
+       
       </div>
     </section>
   );

@@ -7,6 +7,7 @@ import TestimonialsSection from './components/sections/TestimonialsSection';
 import FAQSection from './components/sections/FAQSection';
 import CTASection from './components/sections/CTASection';
 import Footer from './components/sections/Footer';
+import PricingSection from './components/sections/PricingSection';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <HeroSection />
       <FeaturesSection />
       <HowItWorksSection />
+      <PricingSection />
       <TestimonialsSection />
       <FAQSection />
       <CTASection />
